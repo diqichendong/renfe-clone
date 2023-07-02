@@ -1,0 +1,42 @@
+/* Fuente */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Variables */
+$color1: crimson;
+$color2: purple;
+$color3: cornflowerblue;
+$color-sombras: lightgrey;
+
+/* Funciones */
+@mixin boxShadow($tamanyo, $color) {
+  box-shadow: 0 0 $tamanyo $color;
+}
+
+@mixin bordesRedondeados() {
+  border-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @import "header";
+
+  @import "search";
+
+  @import "slider";
+
+  @import "section";
+
+  @import "footer";
+
+  @import "responsive";
+}

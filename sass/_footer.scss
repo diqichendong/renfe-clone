@@ -1,0 +1,35 @@
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $color-sombras;
+  padding: 20px;
+  margin-top: 20px;
+
+  .menu-footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    li {
+      list-style: none;
+      text-align: center;
+
+      &:hover {
+        color: $color2;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .derechos {
+    display: flex;
+    align-items: center;
+
+    span {
+      height: fit-content;
+    }
+  }
+}
